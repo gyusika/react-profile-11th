@@ -23,9 +23,9 @@ export default function Prof({
             <Univ>{univ}대학교 {major}과</Univ>
           </Up>
           <Bottom>
-            <PN>{phoneNum}</PN>
+            <PhoneNum>{phoneNum}</PhoneNum>
             <Mail>{email}</Mail>
-            <Git>{githubLink}</Git>
+            <Git href={githubLink}>{githubLink}</Git>
           </Bottom>
         </Info>
         <Img><img src={imageUrl} width="100%"></img></Img>
