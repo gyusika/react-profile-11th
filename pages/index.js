@@ -57,37 +57,26 @@ const profiles = [
 ];
 
 export default function Home() {
-   const Person = profiles.map((person) => (
-      <Prof
-         id={person.id}
-         name={person.name}
-         age={person.age}
-         role={person.role}
-         univ={person.univ}
-         major={person.major}
-         phoneNum={person.phoneNum}
-         email={person.email}
-         githubLink={person.githubLink}
-         imageUrl={person.imageUrl}
-      />
-   ));
-
-   return (
-      <Bg>
-         <Title>CEOS 프론트엔드 운영진</Title>
-         <body>
-            <Space>
-              <Box>{Person[0]}</Box>
-              <Box>{Person[1]}</Box>
-            </Space>
-            <Space> 
-              <Box>{Person[2]}</Box>
-              <Box>{Person[3]}</Box>
-            </Space>
-         </body>
-      </Bg>
-   );
+  return (
+    <Wrapper>
+      <Title>CEOS 프론트엔드 운영진</Title>
+      <CardsWrapper>
+        {profiles
+          .map(profile => (
+            <ProfileCard key={profile.id} {...profile} />
+          ))}
+      </CardsWrapper>
+    </Wrapper>
+  );
 }
+
+const CardsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
 
 const Title = styled.div`
   font-size: 2.8rem;
