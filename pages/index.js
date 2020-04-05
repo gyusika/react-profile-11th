@@ -78,7 +78,7 @@ const CardsWrapper = styled.div`
 `;
 
 
-const Title = styled.div`
+const Title = styled.h1`
   font-size: 2.8rem;
   margin-bottom: 2rem;
 `;
