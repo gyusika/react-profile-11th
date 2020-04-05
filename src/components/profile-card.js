@@ -47,7 +47,7 @@ const ClubName = styled.div`
   font-size: 1.6rem;
 `;
 
-const Card = styled.div`
+const InfoWrapper = styled.div`
   display: flex;
   flex-direction: row;
   -webkit-box-pack: justify;
