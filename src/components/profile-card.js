@@ -39,7 +39,7 @@ export default function Prof({
   )
 }
 
-const Ceos = styled.div`
+const ClubName = styled.div`
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
