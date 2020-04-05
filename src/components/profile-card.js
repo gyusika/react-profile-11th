@@ -28,7 +28,11 @@ export default function Prof({
             <Git href={githubLink}>{githubLink}</Git>
           </Bottom>
         </Info>
-        <Img><img src={imageUrl} width="100%"></img></Img>
+        <Img src={imageUrl}/>
+        
+        const Img = styled.img`
+           ...
+        `;
       </Card>
       <Ceos>신촌 연합 IT 창업 동아리 CEOS</Ceos>
     </div>
