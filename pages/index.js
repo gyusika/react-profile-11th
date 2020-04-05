@@ -88,10 +88,7 @@ const Box = styled.div`
   background-color: rgb(255, 255, 255);
   margin-bottom: 2rem;
   padding: 1.5rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(204, 204, 204);
-  border-image: initial;
+  border-width: 1px solid rgb(204, 204, 204);
   border-radius: 1.5rem;
 `;
 
